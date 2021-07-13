@@ -53,7 +53,7 @@ export default function Home() {
             <input type="checkbox" id="toggle" className="hidden" />
             <label onClick={changeTheme} htmlFor="toggle">
               <div className="w-9 h-5 flex items-center rounded-full bg-gray-300 p-1">
-              <div className="Toggle-dot w-4 h-4 rounded-full bg-white shadow-md transition" ></div>
+              <div className="Toggle-dot w-4 h-4 rounded-full cursor-pointer bg-white shadow-md transition" ></div>
               </div>
             </label>
             <span>Dark</span>
@@ -63,7 +63,7 @@ export default function Home() {
             <p className="link">Images</p>
 
             {/*Icon*/}
-            <ViewGridIcon className="dark:text-white w-10 h10 p-2 rounded-full hover:bg-gray-100 hover" />
+            <ViewGridIcon className="dark:text-white w-10 h10 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-900" />
 
             {/*Avatar*/}
 
