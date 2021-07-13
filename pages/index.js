@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import { MicrophoneIcon, ViewGridIcon, UserIcon } from "@heroicons/react/solid";
+import { MicrophoneIcon, ViewGridIcon, UserIcon, GlobeIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/outline";
-import Footer from "../Components/Footer";
 import { useRef } from "react";
 import { useRouter } from "next/dist/client/router";
 import { useTheme } from "next-themes";
@@ -111,7 +110,26 @@ export default function Home() {
         </form>
 
         {/*Footer*/}
-        <Footer />
+        <footer className="dark:bg-gray-800 grid w-full divide-y-[1px] divide-gray-300 dark:divide-gray-900 bg-gray-100 text-sm text-gray-500">
+      <div className="px-8 py-3">
+        <p>India</p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 grid-flow-row-dense">
+        <div className="flex justify-center items-center md:col-span-2 lg:col-span-1 lg:col-start-2">
+          <GlobeIcon className="h-5 mr-1 text-green-700" />Carbon neutral since 2007
+        </div>
+      <div className="flex justify-center space-x-8 whitespace-nowrap md:justify-self-start">
+        <p className="lg:p-4">Advertising</p>
+        <p className="lg:p-4">Business</p>
+        <p className="lg:p-4">How Search Works</p>
+      </div>
+      <div className="flex justify-center space-x-8 md:ml-auto">
+          <p className="lg:p-4">Privacy</p>
+          <p className="lg:p-4">Terms</p>
+          <p className="lg:p-4">Settings</p>
+      </div>
+      </div>
+    </footer>
       </div>
     </div>
   );
