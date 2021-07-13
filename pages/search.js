@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Header from "../Components/Header";
+import Header from "./../Components/Header";
 import { API_KEY, CONTEXT_KEY } from "../Key";
 import Response from "../Response";
 import SearchResults from "../Components/SearchResults";
